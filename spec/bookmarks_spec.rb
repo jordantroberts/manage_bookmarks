@@ -4,12 +4,10 @@ describe Bookmarks do
 
   describe '#all' do
     it 'displays a list of bookmark links' do
-      bookmarks = [
-                  "www.google.com",
-                  "www.netflix.com",
-                  "www.twitter.com"
-                  ]
-      expect(Bookmarks.all).to eq bookmarks
+      bookmarks = Bookmarks.all
+      expect(bookmarks).to include "http://www.makersacademy.com"
+      expect(bookmarks).to include "http://destroyallsoftware.com"
+      expect(bookmarks).to include "http://www.google.com"
     end
   end
 end

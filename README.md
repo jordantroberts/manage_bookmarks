@@ -4,13 +4,13 @@ Makers Academy Week 4 pairing challenge: build a web app that stores bookmarks i
 
 ## To set up the database
 
-Connect to `psql` and create the `bookmark_manager` database:
+Connect to `psql` and create the `bookmark_manager` database using the `psql` command as follows:
 
 ````
 CREATE DATABASE bookmark_manager;
 ````
 
-To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
+To set up the appropriate tables, connect to the database in `psql` (using the command `\c bookmark_manager`) and run the SQL scripts in the `db/migrations` folder in the given order.
 
 ## To run the Bookmark Manager app
 
