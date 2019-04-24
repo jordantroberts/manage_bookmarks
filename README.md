@@ -2,6 +2,22 @@
 
 Makers Academy Week 4 pairing challenge: build a web app that stores bookmarks in a database.
 
+## To set up the database
+
+Connect to `psql` and create the `bookmark_manager` database:
+
+````
+CREATE DATABASE bookmark_manager;
+````
+
+To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
+
+## To run the Bookmark Manager app
+
+```
+rackup -p 4567
+```
+
 ## Learning Objectives
 
 * Build a web app that uses a database
@@ -21,4 +37,14 @@ So that I can quickly navigate to websites I frequently visit
 I would like to see a list of bookmarks
 ```
 
-## Domain Model 
+## Domain Model
+
+When the user visits the '/' path, they are presented with the text 'Bookmark Manager' and a button/link titled 'See Bookmarks'. When they click on this button, their browser sends a request to a controller (app.rb)
+
+When the controller gets the request, it asks the Bookmark class to give it all the bookmarks, i.e. the controller asks for Bookmark.all.
+
+The Bookmark class goes and gets the bookmarks, and gives back all the bookmarks in an array to the controller.
+
+The controller renders the array of bookmarks to a webpage, which it sends as a response to the user.
+
+Image:
