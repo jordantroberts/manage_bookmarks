@@ -41,6 +41,11 @@ So that I can quickly navigate to websites I frequently visit
 I would like to see a list of bookmarks
 ```
 
+```As an organised person
+So that I can update my record of favourite web webpages
+I would like to add a bookmark to my list
+```
+
 ## Domain Model
 
 When the user visits the '/' path, they are presented with the text 'Bookmark Manager' and a button/link titled 'See Bookmarks'. When they click on this button, their browser sends a request to a controller (app.rb)
