@@ -1,3 +1,6 @@
+
+require 'setup_test_database'
+
 ENV['RACK_ENV'] = 'test'
 
 # Bring in the contents of the `app.rb` file
@@ -111,4 +114,8 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+
+  config.before(:each) do
+    remove_bookmarks
+  end
 end
