@@ -11,9 +11,9 @@ end
 feature 'viewing bookmarks' do
   scenario 'a user can see bookmark list' do
 
-    Bookmarks.create('http://www.makersacademy.com')
-    Bookmarks.create('http://destroyallsoftware.com')
-    Bookmarks.create('http://www.google.com')
+    Bookmarks.create(url: 'http://www.makersacademy.com')
+    Bookmarks.create(url: 'http://destroyallsoftware.com')
+    Bookmarks.create(url: 'http://www.google.com')
 
     visit('/bookmarks')
 

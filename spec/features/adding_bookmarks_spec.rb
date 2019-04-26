@@ -8,7 +8,7 @@ feature 'adding a new bookmark' do
 
       visit('/bookmarks')
       click_link 'Add Bookmark'
-      fill_in 'URL', with: 'www.asos.com'
+      fill_in 'url', with: 'www.asos.com'
       click_button 'Submit'
       expect(page).to have_content 'www.asos.com'
 

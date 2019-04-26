@@ -20,9 +20,8 @@ describe Bookmarks do
 
   describe '#create' do
     it 'creates a new bookmark' do
-      Bookmarks.create("www.topshop.com")
-      bookmarks = Bookmarks.all
-      expect(bookmarks).to include "www.topshop.com"
+      Bookmarks.create(url: "www.topshop.com") 
+      expect(Bookmarks.all).to include "www.topshop.com"
     end
   end
 end
