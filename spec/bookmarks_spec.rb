@@ -22,10 +22,6 @@ describe Bookmarks do
       expect(bookmarks.first.id).to eq bookmark.id
       expect(bookmarks.first.url).to eq 'http://makersacademy.com'
       expect(bookmarks.first.title).to eq 'Makers Academy'
-
-      # expect(bookmarks).to include "http://www.makersacademy.com"
-      # expect(bookmarks).to include "http://destroyallsoftware.com"
-      # expect(bookmarks).to include "http://www.google.com"
     end
   end
 
@@ -38,8 +34,6 @@ describe Bookmarks do
       expect(bookmark.id).to eq bookmark.id
       expect(bookmark.url).to eq 'www.topshop.com'
       expect(bookmark.title).to eq 'Topshop'
-      # expect(bookmark['url']).to eq "www.topshop.com"
-      # expect(bookmark['title']).to eq 'Topshop'
     end
   end
 end
