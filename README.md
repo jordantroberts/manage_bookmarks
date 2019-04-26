@@ -48,6 +48,10 @@ I would like to add a bookmark to my list
 
 ## Domain Model
 
+My domain model for this project is as follows:
+
+![Bookmarks Domain Model](https://user-images.githubusercontent.com/46907218/56836857-5698ef80-6870-11e9-9f68-27f6e3c95c13.png)
+
 When the user visits the '/' path, they are presented with the text 'Bookmark Manager' and a button/link titled 'See Bookmarks'. When they click on this button, their browser sends a request to a controller (app.rb)
 
 When the controller gets the request, it asks the Bookmark class to give it all the bookmarks, i.e. the controller asks for Bookmark.all.
@@ -56,4 +60,6 @@ The Bookmark class goes and gets the bookmarks, and gives back all the bookmarks
 
 The controller renders the array of bookmarks to a webpage, which it sends as a response to the user.
 
-Image:
+## To fix / complete
+
+I completed Step 11 of the challenge at the end of the week. I would like to implement the 'delete bookmark' function and also the registration function. 
